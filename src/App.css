@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+body {
+  background-color: #121212;
+  color: whitesmoke;
+  font-family: "Josefin Sans", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.money {
+  margin-top: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-1 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(48, 46, 46);
+}
+
+.left {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.right {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.dp04 {
+  background-color: rgba(157, 142, 142, 0.09);
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      4px 5px 0px hsla(0, 0%, 39%, 0.14),
+    0px 1px 10px 0px hsla(0, 0%, 39%, 0.12),
+    0px 2px 4px -1px hsla(0, 0%, 39%, 0.2);
+}
+
+.green {
+  color: rgb(7, 147, 7);
+}
+
+.red {
+  color: rgb(149, 7, 7);
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(48, 46, 46);
+  margin: 20px 0 20px 0;
+  padding: 6px;
+  width: 100%;
+}
+
+.amount {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgb(48, 46, 46);
+  color: antiquewhite;
+  border-radius: 5px;
+}
+
+.log-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgb(48, 46, 46);
+  color: antiquewhite;
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #bb86f6;
+  color: antiquewhite;
+  padding: 5px;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: row;
+}
+
+.color-marker-green {
+  width: 10px;
+  background-color: rgb(7, 147, 7);
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.color-marker-red {
+  width: 10px;
+  background-color: rgb(149, 7, 7);
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
 }
